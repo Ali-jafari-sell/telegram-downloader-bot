@@ -24,7 +24,7 @@ cd /home
 mkdir telegram-bot && cd telegram-bot
 
 # اگر روی گیت‌هاب است:
-# git clone <YOUR_REPO_URL> .
+git clone https://github.com/Ali-jafari-sell/telegram-downloader-bot.git
 
 # یا کپی فایل‌ها مستقیم
 # (از طریق SCP یا FTP)
