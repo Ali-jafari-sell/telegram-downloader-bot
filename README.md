@@ -25,6 +25,7 @@ mkdir telegram-bot && cd telegram-bot
 
 # اگر روی گیت‌هاب است:
 git clone https://github.com/Ali-jafari-sell/telegram-downloader-bot.git
+cd telegram-downloader-bot
 
 # یا کپی فایل‌ها مستقیم
 # (از طریق SCP یا FTP)
@@ -32,7 +33,7 @@ git clone https://github.com/Ali-jafari-sell/telegram-downloader-bot.git
 
 ### 4️⃣ نصب وابستگی‌ها
 ```bash
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt --break-system-packages
 ```
 
 ### 5️⃣ تنظیم توکن
@@ -56,8 +57,8 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/home/telegram-bot
-ExecStart=/usr/bin/python3 /home/telegram-bot/telegram_downloader_bot.py
+WorkingDirectory=/root/telegram-downloader-bot
+ExecStart=/usr/bin/python3 /root/telegram-downloader-bot/telegram_downloader_bot.py
 Restart=always
 RestartSec=10
 
